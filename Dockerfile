@@ -1,6 +1,6 @@
 FROM python:3.10.8-slim-buster
 
-#🛠️ Fix broken Buster repos
+
 RUN sed -i 's|deb.debian.org|archive.debian.org|g' /etc/apt/sources.list && \
     sed -i '/security.debian.org/d' /etc/apt/sources.list && \
     apt update && apt upgrade -y
