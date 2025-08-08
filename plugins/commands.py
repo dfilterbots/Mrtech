@@ -32,11 +32,11 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [
-                InlineKeyboardButton('🖥 𝙊𝙏𝙏 𝙈𝙤𝙫𝙞𝙚 𝙐𝙋𝘿𝘼𝙏𝙀𝙎  🖥', url=f'https://t.me/+NtxN4-UzLIcyMzk1')
+                InlineKeyboardButton('⚙️ 𝐁𝐨𝐭 𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⚙️', url=f'https://t.me/TBM_Bot_Updates')
                ],[
-                InlineKeyboardButton('⚙ 𝙉𝙀𝙒 𝙈𝙊𝙑𝙄𝙀𝙎 ⚙', url=f'https://t.me/MrTechMovies_Group')
+                InlineKeyboardButton('⚓ 𝐌𝐨𝐯𝐢𝐞 𝐒𝐞𝐫𝐚𝐜𝐡 𝐆𝐫𝐨𝐮𝐩 ⚓', url=f'https://t.me/+MOrvSbM3zfVjNmRl')
               ],[
-                InlineKeyboardButton('📤 𝙇𝘼𝙎𝙏𝙀𝙎𝙏 𝙐𝙋𝙇𝙊𝘼𝘿𝙀𝘿 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 📤', url="https://t.me/OTT_RELEASE_MOVIE"),
+                InlineKeyboardButton('🖥 𝐎𝐓𝐓 𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🖥', url="https://t.me/+FHe4nVjjxrI1MDc9"),
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -54,11 +54,11 @@ async def start(client, message):
           return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [
-                InlineKeyboardButton('🖥 𝙊𝙏𝙏 𝙈𝙤𝙫𝙞𝙚 𝙐𝙋𝘿𝘼𝙏𝙀𝙎  🖥', url=f'https://t.me/+5iw_dWArjYg2YTBl')
+                InlineKeyboardButton('⚙️ 𝐁𝐨𝐭 𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⚙️', url=f'https://t.me/TBM_Bot_Updates')
                ],[
-                InlineKeyboardButton('⚙ 𝙉𝙀𝙒 𝙈𝙊𝙑𝙄𝙀𝙎 ⚙', url=f'https://www.instagram.com/new_ott__updates?igsh=enI5ZzIzcXuzd3Bl')
+                InlineKeyboardButton('⚓ 𝐌𝐨𝐯𝐢𝐞 𝐒𝐞𝐫𝐚𝐜𝐡 𝐆𝐫𝐨𝐮𝐩 ⚓', url=f'https://t.me/+MOrvSbM3zfVjNmRl')
               ],[
-                InlineKeyboardButton('📤 𝙇𝘼𝙎𝙏𝙀𝙎𝙏 𝙐𝙋𝙇𝙊𝘼𝘿𝙀𝘿 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 📤', url="https://t.me/+5iw_dWArjYg2YTBl"),
+                InlineKeyboardButton('🖥 𝐎𝐓𝐓 𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🖥', url="https://t.me/+FHe4nVjjxrI1MDc9"),
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -107,7 +107,7 @@ async def start(client, message):
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
                     )
-                k = await message.reply_text("<b><u>📁 𝗪𝗮𝗿𝗻𝗶𝗻𝗴 ⚠️</u>Please save the file to your saved messages, it will be deleted in 5 mins.</blockquote>")
+                k = await message.reply_text("<b>📁 𝗪𝗮𝗿𝗻𝗶𝗻𝗴 ⚠️Please save the file to your saved messages, it will be deleted in 5 mins</b>")
                 await asyncio.sleep(300)
                 await m.delete()
                 await k.edit("<b>Your File/Video is successfully deleted!!!</b>")
@@ -121,7 +121,7 @@ async def start(client, message):
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
                     )
-                k = await message.reply_text("<b><u>📁 𝗪𝗮𝗿𝗻𝗶𝗻𝗴 ⚠️</u>Please save the file to your saved messages, it will be deleted in 5 mins.</blockquote>")
+                k = await message.reply_text("<b>📁 𝗪𝗮𝗿𝗻𝗶𝗻𝗴 ⚠️Please save the file to your saved messages, it will be deleted in 5 mins.</b>")
                 await asyncio.sleep(300)
                 await m.delete()
                 await k.edit("<b>Your File/Video is successfully deleted!!!</b>")
@@ -187,7 +187,7 @@ async def start(client, message):
                 file_id=file_id,
                 protect_content=True if pre == 'filep' else False,
                 )
-            k = await message.reply_text("<b><u>📁 𝗪𝗮𝗿𝗻𝗶𝗻𝗴 ⚠️</u>Please save the file to your saved messages, it will be deleted in 5 mins.</blockquote>")
+            k = await message.reply_text("<b>📁 𝗪𝗮𝗿𝗻𝗶𝗻𝗴 ⚠️Please save the file to your saved messages, it will be deleted in 5 mins.</b>")
             await asyncio.sleep(300)
             await m.delete()
             await k.edit("<b>Your File/Video is successfully deleted!!!</b>")
@@ -225,7 +225,7 @@ async def start(client, message):
         caption=f_caption,
         protect_content=True if pre == 'filep' else False,
     )
-    k = await message.reply_text("<b><u>📁 𝗪𝗮𝗿𝗻𝗶𝗻𝗴 ⚠️</u>Please save the file to your saved messages, it will be deleted in 5 mins.</blockquote>")
+    k = await message.reply_text("<b>📁 𝗪𝗮𝗿𝗻𝗶𝗻𝗴 ⚠️Please save the file to your saved messages, it will be deleted in 5 mins.</b>")
     await asyncio.sleep(300)
     await m.delete()
     await k.edit("<b>Your File/Video is successfully deleted!!!</b>")
